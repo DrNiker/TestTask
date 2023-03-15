@@ -1,0 +1,25 @@
+Test 1:
+I found only one mistake - there is no check on nullptr on adding to the array, we can not expect that actors spawned with 100% chance and that it will not be destroyed during runtime
+
+Test 3:
+I randomly choose 2nd (World Interaction System) and 4th (Punching and damaging cubes) features 
+
+Both features done by implementing interfaces for more flexibility. 
+
+Interaction
+
+Player can interact while standing next to the object to interact, facing it and press InteractionKey(E). When it happens player`s character casts ray forwards and if it hits object in front that implements interface invokes interaction in this objects.
+Interaction with cube returns cube name
+Interaction with NPC returns greetings
+Because of Implementation interfaces, it is easy to expand the number of objects to interact despite of the type of object.
+
+Attack
+
+Attack(LMB) uses the same interface but other function that gets damage value from player and applies it to the cubes to destroy them if they health goes under 0.
+
+What to do to polish? 
+
+1. Add highlight for an interaction object
+2. Add feedback from damaging 
+
+Other depends on project features
